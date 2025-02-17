@@ -10,6 +10,12 @@ def quitGame():
     sys.exit()
 
 
+def showMessage(message, delayTime):
+    # Print Message to the Screen, and wait for given time
+    print(message)
+    time.sleep(delayTime)
+
+
 # Greeting the Player
 try:
     print('Welcome to Guess the Number Game. \nYou can Quit the game any time by pressing CTRL+C keys on your keyboard')
@@ -37,17 +43,14 @@ while True:
 
 # Haing Fun and choosing the secret number
 try:
-    print('Wait, a moment, I m gearing up for the battle.')
-    time.sleep(2)
-    print("Don't be stupid.I'm not stuck., I'm still thinking of what number to choose!")
-    time.sleep(3)
-    print('Dont dare to Quit on me')
+    showMessage('Wait, a moment, I m gearing up for the battle.', 2)
+    showMessage(
+        "Don't be stupid.I'm not stuck. I'm still thinking of what number to choose!", 3)
+    showMessage("Don't dare to Quit on me", 2.5)
     secretNumber = random.randint(lowerEndOfGuess, higherEndOfGuess)
     time.sleep(2.5)
-    print('Shshhhhhhh! I have chosen my MAGIC NUMBER!')
-    time.sleep(1.5)
-    print("It's your turn")
-    time.sleep(1.5)
+    showMessage("Shshhhhhhh! I have chosen my MAGIC NUMBER!", 1.5)
+    showMessage("It's your turn", 1.5)
 except KeyboardInterrupt:
     quitGame()
 # print(f"Debug: Secret Number is {secretNumber}")
