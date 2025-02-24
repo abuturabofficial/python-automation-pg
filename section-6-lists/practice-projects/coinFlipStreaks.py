@@ -28,5 +28,4 @@ for experimentNumber in range(10000):
         previousFlip = flip
 
 
-# print(flipList)
 print(f"The percentage is: {round((numberOfStreaks / 10000) * 100, 2)}%")
