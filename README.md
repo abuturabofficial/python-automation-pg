@@ -5,4 +5,4 @@ This repo contain coding excercises from the following courses:
 
 This course is offered by **Al Sweigart** on **Udemy**.
 
-### [Check My Notes](https://wiki.cyberfront.me/cs-and-programming/automate-the-boring-stuff-with-python/)
+### [Check My Notes](https://wiki.sajidmahmood.com/cs-and-programming/automate-the-boring-stuff-with-python/)
